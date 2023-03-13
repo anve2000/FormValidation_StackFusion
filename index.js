@@ -79,7 +79,7 @@ function validateFields() {
             }
 
             if (!checkMinMax(targetField, 4, 20)) {
-                // alert(`${targetField.classList[0]} length should be >=8 and <=20 `);
+                // alert(`${targetField.classList[0]} length should be >=4 and <=20 `);
                 const errorField = targetField.querySelector('.onError');
                 errorField.innerText = targetField.classList[0] + "length should be >=8 and <=20 ";
 
@@ -121,5 +121,5 @@ form.addEventListener('submit', (e) => {
 
 
 
-// const result = checkMinMax(username, 8, 10);
+// const result = checkMinMax(username, 4, 10);
 // console.log(result);
